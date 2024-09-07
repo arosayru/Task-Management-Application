@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+Task Management Application
+This is a Task Management Application built using React for the frontend and Spring Boot for the backend. The application is designed to manage tasks, projects, and users efficiently. It includes features like user management, project management, and task management.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Key Features
+The Task Management Application offers three main features:
 
-## Available Scripts
+User Management:
 
-In the project directory, you can run:
+Add, edit, and delete users.
+Manage user roles and assign tasks to users.
+Project Management:
 
-### `npm start`
+Create, edit, and delete projects.
+Assign projects to tasks for better task management.
+Task Management:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Create, edit, and delete tasks.
+Assign tasks to users and link them to specific projects.
+Set the task status (Pending, In Progress, Completed) and due dates.
+Frontend
+The frontend of this application is built using React and manages the UI/UX of the application. The frontend is responsible for handling user interactions and displaying the data fetched from the backend.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Technologies Used:
+React: For building the user interface and handling user interactions.
+React Router: For managing navigation between different views.
+Axios: For handling HTTP requests and connecting the frontend to the backend.
+CSS: For styling the UI and ensuring a responsive design.
+Features of the Frontend:
+Dynamic UI: The interface updates dynamically based on user actions and data from the backend.
+Search and Filter: Tasks and users can be searched and filtered using the provided search bar.
+CRUD Operations: The frontend allows Create, Read, Update, and Delete operations for users, tasks, and projects.
+State Management: The application uses useState and useEffect hooks for managing component state and side effects.
+Form Validation: Frontend validation is implemented to ensure that required fields are filled before submission.
+Frontend to Backend Communication:
+The frontend communicates with the backend through RESTful APIs using Axios for HTTP requests. Here’s an example of the data flow between the frontend and backend:
 
-### `npm test`
+GET Requests: To fetch users, tasks, and projects from the backend to display in the UI.
+POST Requests: To add new tasks, projects, and users to the backend.
+PUT Requests: To update existing tasks, projects, and user details.
+DELETE Requests: To remove tasks, users, or projects from the database.
+Backend
+The backend is built using Spring Boot and handles data storage and business logic. It exposes REST APIs that the frontend interacts with.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Backend Technologies:
+Spring Boot: For developing RESTful APIs and handling backend services.
+MySQL: For storing data (users, tasks, projects) persistently in the database.
+Backend Setup:
+All data from the frontend (such as user details, task details, and project details) is sent to the backend through HTTP requests.
+The backend processes these requests and performs the necessary database operations.
+The backend is also responsible for retrieving data from the database and sending it back to the frontend as JSON.
