@@ -59,54 +59,5 @@
     <li>The backend is also responsible for retrieving data from the database and sending it back to the frontend as JSON.</li>
 </ul>
 
-<h2>Installation Instructions</h2>
-<p>To run this project locally, follow the steps below:</p>
-
-<h3>1. Clone the repository</h3>
-<pre><code>git clone https://github.com/yourusername/task-management-app.git</code></pre>
-
-<h3>2. Frontend Setup</h3>
-<ul>
-    <li>Navigate to the <code>frontend</code> folder:</li>
-    <pre><code>cd frontend</code></pre>
-    <li>Install dependencies:</li>
-    <pre><code>npm install</code></pre>
-    <li>Start the frontend server:</li>
-    <pre><code>npm start</code></pre>
-</ul>
-
-<h3>3. Backend Setup</h3>
-<ul>
-    <li>Navigate to the <code>backend</code> folder:</li>
-    <pre><code>cd backend</code></pre>
-    <li>Set up the MySQL database and configure <code>application.properties</code> with your database credentials.</li>
-    <li>Build and run the Spring Boot application:</li>
-    <pre><code>mvn spring-boot:run</code></pre>
-</ul>
-
-<h3>4. Access the Application</h3>
-<ul>
-    <li>The frontend will be running on <code>http://localhost:3000</code>.</li>
-    <li>The backend will be running on <code>http://localhost:8084</code>.</li>
-</ul>
-
-<h2>How to Use</h2>
-<ul>
-    <li>Log in or create a new user.</li>
-    <li>Add new tasks and assign them to users and projects.</li>
-    <li>Edit or delete tasks, users, and projects.</li>
-    <li>View tasks by their status (Pending, In Progress, Completed).</li>
-</ul>
-
-<h2>Future Enhancements</h2>
-<ul>
-    <li>Implement global state management (e.g., Redux) for better state handling.</li>
-    <li>Add authentication and authorization features to manage user roles securely.</li>
-    <li>Implement file uploads for task attachments.</li>
-</ul>
-
-<h2>Conclusion</h2>
-<p>This Task Management Application is a robust solution for managing tasks, users, and projects efficiently. The integration between the React frontend and Spring Boot backend ensures seamless data flow and user interaction.</p>
-
 </body>
 </html>
